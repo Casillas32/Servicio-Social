@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Concurso de Gastronomía</title>
+    <link rel="stylesheet" href="/style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+</head>
+<body>
+    <main class="login-container">
+        <div class="login-form-wrapper">
+            <div class="avatar">
+                <i class="fas fa-user"></i>
+            </div>
+            <form id="login-form" class="login-form">
+                <div class="input-group">
+                    <i class="fas fa-user"></i>
+                    <input type="email" id="login-correo" placeholder="Correo" required>
+                </div>
+                <div class="input-group">
+                    <i class="fas fa-lock"></i>
+                    <input type="password" id="login-password" placeholder="Contraseña" required>
+                </div>
+                <div class="options">
+                    <label>
+                        <input type="checkbox"> Recordarme
+                    </label>
+                    <a href="#">Olvide mi contraseña</a>
+                </div>
+                <button type="submit" class="sign-in-button">Iniciar sesión</button>
+                <p id="login-error" class="error-message"></p>
+            </form>
+
+            <div class="separator">
+                <span>O</span>
+            </div>
+
+            <h2>Ingresar como Juez</h2>
+            <form id="juez-login-form" class="judge-login-form">
+                <div class="input-group">
+                    <i class="fas fa-user"></i>
+                    <input type="text" id="juez-nombre" placeholder="Nombre" required>
+                </div>
+                <div class="input-group">
+                    <i class="fas fa-user"></i>
+                    <input type="text" id="juez-apellido" placeholder="Apellido" required>
+                </div>
+                <button type="submit" class="judge-sign-in-button">Ingresar como Juez</button>
+                <p id="juez-login-error" class="error-message"></p>
+            </form>
+        </div>
+
+        <div id="register-section" class="register-prompt">
+            <p>¿No eres administrador?</p>
+            <button id="create-account-button"><a href="register.html">Crear cuenta</a></button>
+        </div>
+    </main>
+
+    <script src="/script.js"></script>
+</body>
+</html>

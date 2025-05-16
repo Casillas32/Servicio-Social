@@ -1,0 +1,349 @@
+body {
+    font-family: 'Inter', sans-serif;
+    margin: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    background: linear-gradient(135deg, #c2e59c, #64b3f4);
+}
+
+.container {
+    background-color: rgba(255, 255, 255, 0.8);
+    border-radius: 10px;
+    padding: 30px;
+    width: 90%;
+    max-width: 1000px;
+    margin-top: 20px;
+    margin-bottom: 20px;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.2);
+}
+
+header {
+    background-color: rgba(255, 255, 255, 0.2);
+    padding: 20px;
+    border-radius: 10px;
+    margin-bottom: 20px;
+    text-align: center;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+header h1 {
+    font-size: 2.5em;
+    font-weight: 600;
+    color: #333;
+    margin: 0;
+}
+
+h2 {
+    font-size: 2em;
+    font-weight: 600;
+    color: #333;
+    margin-bottom: 20px;
+    text-align: center;
+}
+
+.form-section {
+    background-color: rgba(255, 255, 255, 0.5);
+    padding: 20px;
+    border-radius: 10px;
+    margin-bottom: 20px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+.form-section h2 {
+    font-size: 1.5em;
+    margin-bottom: 20px;
+    color: #333;
+}
+
+
+form {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+}
+
+form div {
+    margin-bottom: 15px;
+    width: 100%;
+}
+
+form label {
+    display: block;
+    margin-bottom: 5px;
+    color: #555;
+    font-weight: 600;
+    font-size: 1em;
+}
+
+input[type="text"],
+input[type="email"],
+input[type="password"],
+input[type="number"],
+select {
+    width: calc(100% - 20px);
+    padding: 12px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    font-size: 1em;
+    background-color: rgba(255, 255, 255, 0.8);
+    transition: border-color 0.3s ease;
+}
+
+input[type="text"]:focus,
+input[type="email"]:focus,
+input[type="password"]:focus,
+input[type="number"]:focus,
+select:focus {
+    outline: none;
+    border-color: #007bff;
+    box-shadow: 0 0 0 2px rgba(0, 123, 255, 0.25);
+}
+
+button {
+    padding: 12px 25px;
+    background-color: #fff;
+    color: #5e2ced;
+    border: none;
+    border-radius: 25px;
+    cursor: pointer;
+    font-size: 1.1em;
+    transition: background-color 0.3s ease;
+    width: 100%;
+    max-width: 300px;
+    text-align: center;
+    margin: 0 auto;
+}
+
+button:hover {
+    background-color: #f0f0f0;
+}
+
+button#reset-data-button {
+    background-color: #dc3545;
+    margin-top: 20px;
+}
+
+button#reset-data-button:hover {
+    background-color: #c82333;
+}
+
+.error-message {
+    color: red;
+    margin-top: 10px;
+    text-align: center;
+    font-size: 0.9em;
+}
+
+.hidden {
+    display: none;
+}
+
+nav {
+    margin-bottom: 20px;
+    text-align: center;
+}
+
+nav ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    display: inline-block;
+}
+
+nav ul li {
+    display: inline;
+    margin-right: 15px;
+}
+
+nav ul li a,
+nav ul li button {
+    color: #fff;
+    text-decoration: none;
+    background: transparent;
+    border: none;
+    padding: 10px 15px;
+    cursor: pointer;
+    font-size: 1.1em;
+    transition: color 0.3s ease, text-decoration 0.3s ease;
+}
+
+nav ul li a:hover,
+nav ul li button:hover {
+    color: #fff;
+    text-decoration: underline;
+}
+
+nav ul li a.active {
+    font-weight: bold;
+    text-decoration: underline;
+}
+
+#universities-groups-list ul,
+#rubric-list ul,
+#results-container ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+#universities-groups-list li,
+#rubric-list li,
+#results-container li {
+    margin-bottom: 10px;
+    padding: 15px;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    background-color: rgba(255, 255, 255, 0.8);
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    line-height: 1.6;
+}
+
+#universities-groups-list h3,
+#rubric-list h3,
+#results-container h3 {
+    font-size: 1.2em;
+    margin-bottom: 10px;
+    color: #333;
+    font-weight: 600;
+}
+
+.login-container {
+    background: transparent;
+    border-radius: 10px;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.2);
+    padding: 30px;
+    width: 90%;
+    max-width: 400px;
+    text-align: center;
+}
+
+.login-form-wrapper {
+    background-color: rgba(255, 255, 255, 0.2);
+    border-radius: 10px;
+    padding: 30px;
+}
+
+.avatar {
+    background-color: rgba(255, 255, 255, 0.5);
+    border-radius: 50%;
+    padding: 15px;
+    margin: 0 auto 20px;
+    font-size: 2em;
+    color: #333;
+}
+
+.input-group {
+    position: relative;
+    margin-bottom: 20px;
+    display: flex;
+    align-items: center;
+    background-color: rgba(255, 255, 255, 0.8);
+    border-radius: 5px;
+    padding-left: 10px;
+}
+
+.input-group i {
+    color: #777;
+    margin-right: 10px;
+}
+
+.input-group input {
+    border: none;
+    padding: 12px;
+    width: 100%;
+    border-radius: 5px;
+    font-size: 1em;
+    background: transparent;
+}
+
+.input-group input:focus {
+    outline: none;
+}
+
+.options {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 20px;
+    font-size: 0.9em;
+    color: #555;
+}
+
+.options a {
+    color: #007bff;
+    text-decoration: none;
+}
+
+.options a:hover {
+    text-decoration: underline;
+}
+
+.sign-in-button,
+.judge-sign-in-button {
+    background-color: #fff;
+    color: #5e2ced;
+    border: none;
+    border-radius: 25px;
+    padding: 12px 25px;
+    cursor: pointer;
+    font-size: 1em;
+    transition: background-color 0.3s ease;
+    width: 100%;
+    margin-bottom: 15px;
+}
+
+.sign-in-button:hover,
+.judge-sign-in-button:hover {
+    background-color: #f0f0f0;
+}
+
+.separator {
+    display: flex;
+    align-items: center;
+    text-align: center;
+    margin: 20px 0;
+    color: #777;
+}
+
+.separator::before,
+.separator::after {
+    content: '';
+    flex-grow: 1;
+    background-color: #ccc;
+    height: 1px;
+    margin: 0 10px;
+}
+
+.judge-login-form {
+    margin-top: 20px;
+}
+
+.register-prompt {
+    margin-top: 30px;
+    color: #fff;
+}
+
+.register-prompt p {
+    margin-bottom: 10px;
+}
+
+.register-prompt button {
+    background-color: #fff;
+    color: #5e2ced;
+    border: none;
+    border-radius: 25px;
+    padding: 10px 20px;
+    cursor: pointer;
+    font-size: 0.9em;
+    transition: background-color 0.3s ease;
+}
+
+.register-prompt button:hover {
+    background-color: #f0f0f0;
+}
+
+.register-prompt button a {
+    text-decoration: none;
+    color: inherit;
+}

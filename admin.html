@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Panel de Administrador</title>
+    <link rel="stylesheet" href="/style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600&display=swap" rel="stylesheet">
+</head>
+<body>
+    <header>
+        <h1>Panel de Administrador</h1>
+        <nav>
+            <ul>
+                <li><a href="#" id="manage-universities-link">Gestionar Universidades y Grupos</a></li>
+                <li><a href="#" id="manage-rubric-link">Gestionar Rúbrica</a></li>
+                <li><a href="#" id="view-results-link">Ver Resultados</a></li>
+                <li><button id="reset-data-button">Eliminar Todo</button></li>
+                <li><button id="logout-admin">Cerrar Sesión</button></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+        <section id="manage-universities" class="hidden form-section">
+            <h2>Gestionar Universidades y Grupos</h2>
+            <div>
+                <h3>Añadir Universidad</h3>
+                <form id="add-university-form">
+                    <div>
+                        <label for="university-name">Nombre:</label>
+                        <input type="text" id="university-name" required>
+                    </div>
+                    <button type="submit">Añadir Universidad</button>
+                    <p id="add-university-message"></p>
+                </form>
+                <h3>Añadir Grupo a Universidad</h3>
+                <form id="add-group-form">
+                    <div>
+                        <label for="group-university">Universidad:</label>
+                        <select id="group-university" required></select>
+                    </div>
+                    <div>
+                        <label for="group-name">Nombre del Grupo:</label>
+                        <input type="text" id="group-name" required>
+                    </div>
+                    <button type="submit">Añadir Grupo</button>
+                    <p id="add-group-message"></p>
+                </form>
+            </div>
+            <h3>Universidades y Grupos Registrados</h3>
+            <div id="universities-groups-list"></div>
+        </section>
+
+        <section id="manage-rubric" class="hidden form-section">
+            <h2>Gestionar Rúbrica de Evaluación</h2>
+            <form id="add-rubric-item-form">
+                <div>
+                    <label for="rubric-name">Criterio:</label>
+                    <input type="text" id="rubric-name" required>
+                </div>
+                <div>
+                    <label for="rubric-weight">Peso (%):</label>
+                    <input type="number" id="rubric-weight" min="1" max="100" required>
+                </div>
+                <button type="submit">Añadir Criterio</button>
+                <p id="add-rubric-message"></p>
+            </form>
+            <h3>Rúbrica Actual</h3>
+            <div id="rubric-list"></div>
+        </section>
+
+        <section id="view-results" class="hidden form-section">
+            <h2>Resultados del Concurso</h2>
+            <div id="results-container"></div>
+        </section>
+    </main>
+
+    <script src="/script.js"></script>
+</body>
+</html>

@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Panel de Juez</title>
+    <link rel="stylesheet" href="/style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600&display=swap" rel="stylesheet">
+</head>
+<body>
+    <header>
+        <h1>Panel de Juez</h1>
+        <p id="juez-info"></p>
+        <button id="logout-juez">Cerrar Sesión</button>
+    </header>
+
+    <main>
+        <section id="evaluation-section" class="form-section">
+            <h2>Evaluar Participante</h2>
+            <form id="evaluation-form">
+                <div>
+                    <label for="eval-university">Universidad:</label>
+                    <select id="eval-university" required>
+                        <option value="">Seleccionar Universidad</option>
+                    </select>
+                </div>
+                <div>
+                    <label for="eval-group">Grupo:</label>
+                    <select id="eval-group" required>
+                        <option value="">Seleccionar Grupo</option>
+                    </select>
+                </div>
+                <div id="rubric-evaluation-fields">
+                    </div>
+                <button type="submit">Enviar Evaluación</button>
+                <p id="evaluation-message"></p>
+            </form>
+        </section>
+    </main>
+
+    <script src="/script.js"></script>
+</body>
+</html>
